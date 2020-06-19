@@ -1,0 +1,114 @@
+body {
+ background-color:#f3f1f1;
+}
+
+.card{
+ background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+.overflow{
+	overflow:hidden;
+}
+
+.gap{
+margin-bottom:15px;
+}
+
+.arrow{
+	left: 45%;
+    position: relative;
+    width: colo;
+    color: #938b8b;
+	
+	    top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-box{
+	    top: -15px;
+		left: 5px;
+}
+
+.right-panel{
+	right: 6px;
+    position: relative;
+	float:right
+}
+
+.img-size{
+	height: 30px;
+    width: 30px;
+}
+
+.price{
+	    font-size: 20px;
+    font-weight: bold;
+}
+.agent{
+color: #6a6767;
+}
+
+
+
+
+.left-side-box{
+	    width: 10%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+left: 10px;
+}
+
+.right-side-box{
+	right: 20px;
+    width: 40%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    /* left: 10px; */
+    top: 5px;
+	
+	   
+}
+
+.mid-box{
+ width: 50%;
+    float: left;
+    overflow: hidden;
+    top: -15px;
+    position: relative;
+
+}
+
+
+.btn-custom{
+width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.price-box{
+	    position: relative;
+    left: 15px;
+}
+
+.select-btn{
+right: 15px;
+    position: relative;
+}
+
+.red{
+	color:red;
+}
+
+.green{
+	color:#4ddb4d;
+}

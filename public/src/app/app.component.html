@@ -1,0 +1,85 @@
+ <div class="container" style="padding:20px">
+ <div class="row">
+  <div class="col-md-12">
+    <img src="assets/logo.png" />
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-4" *ngFor="let item of flightData">
+    <div class="card">
+      <div class="row">
+	  <!-- class="col-md-1" -->
+        <div class="left-side-box">
+          <div style="float:left"><img src="{{item.img}}" class="img-size"/></div>
+        </div>
+        <div class="top-box mid-box" >
+		<span class="arrow">
+		  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+		  </span>
+		
+          <div class="overflow">
+            <span style="float:left">{{item.fromTime1| date : 'H:mm'}}</span> <span style="float:right">{{item.toTime1| date : 'H:mm'}}</span>
+          </div>
+		  
+		 
+		  <div class="overflow">
+            <span style="float:left">{{item.from1}}</span> <span class="right-panel">{{item.to1}}</span>
+          </div>
+		  </div>
+
+        <div   class="right-side-box">
+          <div style="float:right">{{item.duration1}}</div><br>
+          <div style="float:right" [ngClass]="item.color1">{{item.stops1}}</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div  class="left-side-box">
+           <div style="float:left"><img src="{{item.img}}" class="img-size"/></div>
+        </div>
+        <div class="mid-box top-box">
+		<span class="arrow">
+		  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+		  </span>
+		
+          <div class="overflow">
+            <span style="float:left">{{item.fromTime2| date : 'H:mm'}}</span> <span style="float:right">{{item.toTime2| date : 'H:mm'}}</span>
+          </div>
+          <div class="overflow">
+            <span style="float:left">{{item.from2}}</span> <span class="right-panel">{{item.to2}}</span>
+          </div>
+        </div>
+
+         <div class="right-side-box">
+          <div style="float:right">{{item.duration2}}</div><br>
+          <div style="float:right" [ngClass]="item.color2">{{item.stops2}}</div>
+        </div>
+      </div>
+	  <div class="gap"></div>
+	   <div class="row">
+       
+        <div class="top-box btn-custom price-box">
+		
+          <div class="overflow">
+            <span class="price">{{item.price}}</span>
+          </div>
+          <div class="overflow">
+            <span class="agent">{{item.agent}}</span>
+          </div>
+        </div>
+
+         <div  class="btn-custom select-btn">
+          <button type="submit" style="float:right" class="btn btn-primary">Select</button>
+        </div>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<router-outlet></router-outlet>
